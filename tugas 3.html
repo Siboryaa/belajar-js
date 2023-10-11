@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1 id="myHeading">judul</h1>
+    <p id="myParagraph">teks paragraf</p>
+    <button onclick="ubahTeksDanWarna()">Ubah Teks dan Warna</button>
+
+    <script>
+        function ubahTeksDanWarna() {
+             
+            var heading = document.getElementById("myHeading");
+            var paragraph = document.getElementById("myParagraph");
+
+            heading.textContent = "Judul berubah!";
+            paragraph.textContent = "Teks paragraf berubah!";
+
+            heading.style.color = "blue";  
+            paragraph.style.backgroundColor = "yellow"; 
+        }
+    </script>
+</body>
+</html>
